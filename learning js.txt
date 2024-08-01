@@ -1,0 +1,75 @@
+learning js
+
+! is opposite
+
+var has a global scope
+
+procedural programmingh
+oop->object oriented programming
+
+
+-----------------------------------------------------------------------------------------------const---------------------------
+const is used to create objects
+
+
+const students = {
+    firstName: "John",
+    lastName: "Mwangi",
+}
+console.log(students.firstName);
+console.log(students.lastName);
+
+js random, js date
+
+
+
+
+-------------------------------------------------------------------first method
+
+const students = {
+	firstName : "Francis",
+	lastName : "Chego",
+}
+console.log(students.firstName + students.lastName);
+
+
+-----------------------------first method with greeting
+
+const students = {
+	firtName :  "Francis ",
+	age : "20",
+
+	greet:function(){
+		return("hello my name is " + this.firtName + "and my age is " + this.age)
+	}
+}
+
+	console.log(students.greet());
+
+
+
+-------------------------------------------------------------------second method
+	function Person(name, age){
+		this.name = name;
+		this.age = age;
+	}
+	
+let person1 = new Person("Francis", 20);
+console.log(person1.name + person1.age);
+
+
+-------------------------------------------------------------------third  method  use class
+
+class Person{
+	constructor(name,age){
+		this.name = name;
+		this.age = age;
+	}
+}
+let newPerson = new Person("Francis ", 20);
+console.log(newPerson.name + newPerson.age);
+
+
+
+
+ 
